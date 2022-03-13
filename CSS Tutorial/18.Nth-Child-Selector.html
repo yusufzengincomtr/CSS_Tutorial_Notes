@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 1.em;
+        }
+
+        p:first-child {
+            /*ilk p*/
+            /*1.cocuk (1.paragraf(p elementı))*/
+            background: aqua;
+
+        }
+
+        p:nth-child(1) {
+            /*1.p==firstchild*/
+            /*1.cocuk (1.paragraf(p elementı))*/
+            color: orange;
+        }
+
+        p:nth-child(2) {
+            color: wheat;
+        }
+
+        p:last-child {
+            color: red;
+        }
+
+        p:nth-child(even) {
+            /*even = çift (2,4,6..) sıralamadaki p leri değiştirir.*/
+            background: green;
+        }
+
+        p:nth-child(odd) {
+            /*odd = tek (1,3,5..) tek sayıları stillendirir.*/
+            background: blue;
+        }
+
+
+        ul{
+            font-size: 1.em;
+            list-style-type: none; /*listelemedeki noktayı kaldırır.*/
+        }
+        ul li:nth-child(2n){/* n=0 b=0 default 0 dan baslar*/  
+            color :REd;
+        }
+        ul li:nth-child(2n+1){/* n=0 b=0 default 0 dan baslar*/  
+            color :darkgoldenrod;
+        }
+        ul li:nth-child(n+4){
+            background: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt saepe harum culpa, provident rem.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, inventore? Amet nihil quasi cupiditate
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, inventore? Amet nihil quasi cupiditate
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, inventore? Amet nihil quasi cupiditate
+        dignissimos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, inventore? Amet nihil quasi cupiditate
+        dignissimos!
+    </p>
+
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+</body>
+
+</html>

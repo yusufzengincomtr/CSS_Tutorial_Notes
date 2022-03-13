@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1 {
+            font-size: 1.em;
+            /*Default 16 px buda 16 pxlın 1.5 katı demek yani 24 px olur.*/
+            letter-spacing: 2px;
+            /*harf aralığı*/
+            line-height: 1.5em;
+        }
+
+        .para1::first-line {
+            /* ilk satır rengi*/
+            color: red;
+        }
+
+        .para1::first-letter {
+            /* ilk harf */
+            color: blueviolet;
+            font-size: 30px;
+        }
+        .para1::after{
+            content: "Paragraf Sonrası.";
+            content: url("images/logo.png");
+        }
+        .para1::before{
+            content: "Paragraf Başı";
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt, iure perspiciatis
+        accusantium, quo ipsa ut delectus itaque fuga nobis dolore neque. Magni voluptatibus provident qui cum dolorem,
+        saepe doloribus optio omnis magnam eius, earum asperiores, et nulla eveniet debitis. Beatae mollitia optio
+        quaerat, delectus soluta recusandae ipsum quam quod corporis animi amet id perferendis, sapiente sunt!
+        Voluptates adipisci consequatur soluta minus corporis assumenda omnis facere perferendis vel aut mollitia
+        distinctio fugiat quidem obcaecati ex laborum ipsum, voluptate, non recusandae eaque velit porro odio? Aliquid
+        perferendis tempore odio culpa, itaque maiores labore! Iure culpa, laudantium ex laborum officiis commodi
+        voluptate.</p>
+</body>
+
+</html>

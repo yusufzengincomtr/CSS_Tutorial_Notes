@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .background {
+            background: url(./sea.jpg) center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: rgb(5, 1, 58); 
+            align-items: center;
+            padding: 10rem;
+        }    
+        h1{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 2px;/*harf aralıgı*/
+        }
+        @media(max-width:500px){
+            h1{
+            margin-bottom:0.5rem;
+            font-size: 2rem ;
+            }
+            p{
+                font-size: 1rem;
+                display: none;/*yazı kapanır*/
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <h1>Welcome To The Site</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dolores.</p>
+    </div>
+</body>
+
+</html>

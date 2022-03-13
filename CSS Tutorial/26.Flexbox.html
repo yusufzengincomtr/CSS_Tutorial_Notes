@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            min-height: 600px;
+            background-color: black;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            text-align: center;
+            background: #f2f2f2;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blueviolet;
+            margin: 10px;
+        }
+
+        .box-1 {
+            background: red;
+            align-self: center;
+            order: 2;
+            flex-grow: 1;
+        }
+
+        .box-2 {
+            background: blue;
+            order: 1;
+            align-self: flex-end;
+            flex:1;
+        }
+
+        .box-3 {
+            background: green;
+            order: 3;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex Container -->
+    <div class="container">
+        <div class="box box-1">
+            <h1>Aritcle 1</h1>
+
+        </div>
+        <div class="box box-2">
+            <h1>Aritcle 2</h1>
+
+        </div>
+        <div class="box box-3">
+            <h1>Aritcle 3</h1>
+
+        </div>
+    </div>
+</body>
+
+</html>

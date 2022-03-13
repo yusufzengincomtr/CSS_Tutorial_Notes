@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  h1 {
+            color: blue;
+            background: yellow;
+        }
+        p{
+            color:red;
+            background: yellow;
+        }
+
+        h1,p{
+            color: blue;
+            background: yellow;
+        }
+        #logo{
+            color: blue;
+            background: yellow;
+        }
+        .info {
+            color: blue;
+            background: yellow;
+        }
+
+        #logo, .lead{
+            color: blue;
+            background: yellow;
+        }
+        #para1.lead {
+            color: red;
+            background: blue;
+
+        }
+
+        a {
+            text-decoration: none ;
+        }*/
+        ul li a {
+            text-decoration: none;
+        }
+       /* .info span{
+            color:red;
+        }*/
+        .info .primary{
+            color: red;
+        }
+        * {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+        <ul>
+            <li>
+                <a href="#">Content</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, vero.</p>
+
+    <p class="info">Lorem ipsum <span class="primary">dolor</span> sit, amet consectetur adipisicing elit. Ad, culpa.
+    </p>
+    <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, culpa.</p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+</body>
+
+</html>
