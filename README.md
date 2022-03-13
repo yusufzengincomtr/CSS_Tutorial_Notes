@@ -6,4 +6,4 @@
 - Using-Flexbox
 - Landing Page Project
 
-![preview img](/[preview.jpeg)
+<img height="1002" width="1268" src="preview.jpeg" align="center"/>
